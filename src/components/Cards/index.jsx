@@ -54,7 +54,7 @@ export default function Cards() {
           positiva."
       />
 
-      <div className="row">
+      <div className="row row-cols-sm-1 row-cols-md-3 row-cols-lg-4">
         {
           cards.map((card, i) => (
             <div key={i} className="col">

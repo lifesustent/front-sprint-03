@@ -55,7 +55,7 @@ export default function Contact() {
   return (
     <ContactContainer>
       <div className="container">
-        <div className="row justify-content-between">
+        <div className="row row-cols-sm-1 row-cols-md-1 row-cols-lg-2 justify-content-between">
           <div className="col">
             <Title>Não perca mais tempo!</Title>
             <Subtitle>Junte-se a nós e seja parte da mudança em direção a uma cidade mais sustentável. Agende uma demonstração da
