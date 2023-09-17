@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/front-sprint-03/static/css/main.21bd4c54.css",
+    "main.js": "/front-sprint-03/static/js/main.e288f99a.js",
+    "static/js/787.28cb0dcd.chunk.js": "/front-sprint-03/static/js/787.28cb0dcd.chunk.js",
+    "static/media/hero-software.svg": "/front-sprint-03/static/media/hero-software.3c53e5f17ff0c953156c35902f0917fc.svg",
+    "static/media/fill-software.png": "/front-sprint-03/static/media/fill-software.680e4f4df12594fc9f4d.png",
+    "static/media/logo.svg": "/front-sprint-03/static/media/logo.d0ad0609632a8dfc27908f5b67a74237.svg",
+    "static/media/logo-inverse.svg": "/front-sprint-03/static/media/logo-inverse.ae3a93d587a569abc1d95b150eeb97d7.svg",
+    "static/media/hiw-predict.svg": "/front-sprint-03/static/media/hiw-predict.68003b9079d34b44ca7ea602985d75c3.svg",
+    "static/media/hiw-analysis.svg": "/front-sprint-03/static/media/hiw-analysis.938ee345a124f57e493912250da81176.svg",
+    "static/media/hiw-colab.svg": "/front-sprint-03/static/media/hiw-colab.6b96c726c4c2346e9b375b0bb9a3cbf4.svg",
+    "static/media/hiw-realtime.svg": "/front-sprint-03/static/media/hiw-realtime.3d6cb38ae29c175e0597cad68607112b.svg",
+    "static/media/logo-ibm.svg": "/front-sprint-03/static/media/logo-ibm.348fc202ab605bc6e63cd9ddbc4d2119.svg",
+    "index.html": "/front-sprint-03/index.html",
+    "static/media/logo-fiap.svg": "/front-sprint-03/static/media/logo-fiap.1e1a6bf0e36d11f60269d664325e353c.svg",
+    "main.21bd4c54.css.map": "/front-sprint-03/static/css/main.21bd4c54.css.map",
+    "main.e288f99a.js.map": "/front-sprint-03/static/js/main.e288f99a.js.map",
+    "787.28cb0dcd.chunk.js.map": "/front-sprint-03/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21bd4c54.css",
+    "static/js/main.e288f99a.js"
+  ]
+}
