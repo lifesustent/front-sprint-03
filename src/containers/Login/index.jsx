@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import logo from '../../assets/img/logo.svg'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 const AuthContainer = styled.section``
@@ -51,12 +51,15 @@ export default function Auth() {
     }
   }
 
-  // verifica se usuário está logado
-  const logado = localStorage.getItem('logado')
+  useEffect(() => {
+    // verifica se usuário está logado
+    const logado = localStorage.getItem('logado')
+  
+    if (logado) {
+      navigate('/dashboard')
+    }
+  }, [navigate])
 
-  if (logado) {
-    navigate('/dashboard')
-  }
 
   return (
     <AuthContainer className='d-flex align-items-center py-4'>
