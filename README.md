@@ -1,4 +1,4 @@
-# CHECKPOINT 04 - ESR1
+# SPRINT 3 - ESR1
 
 ## Alunos
 
