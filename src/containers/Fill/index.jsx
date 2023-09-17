@@ -4,6 +4,21 @@ import fill from '../../assets/img/fill-software.png';
 
 const FillContainer = styled.section``
 
+const FillTitle = styled.h1`
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 47px;
+  color: #292f77 !important;
+`
+
+const FillSubtitle = styled.h2`
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+`
+
 export default function Fill() {
   return (
     <FillContainer className="container d-flex">
@@ -13,9 +28,9 @@ export default function Fill() {
         </div>
 
         <div className="col-md col-sm-12">
-          <h1 className="text-secondary">Interface intuitiva e personalizável</h1>
-          <h2 className="mb-4">Nossa interface de usuário é intuitiva e altamente personalizável para atender às necessidades específicas de
-          sua cidade. Visualize dados de maneira clara e simplificada, permitindo uma compreensão fácil e rápida.</h2>
+          <FillTitle className="text-secondary">Interface intuitiva e personalizável</FillTitle>
+          <FillSubtitle className="mb-4">Nossa interface de usuário é intuitiva e altamente personalizável para atender às necessidades específicas de
+          sua cidade. Visualize dados de maneira clara e simplificada, permitindo uma compreensão fácil e rápida.</FillSubtitle>
         </div>
       </div>
     </FillContainer>

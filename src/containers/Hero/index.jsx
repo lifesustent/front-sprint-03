@@ -9,6 +9,7 @@ const HeroTitle = styled.h1`
   font-weight: 800;
   font-size: 40px;
   line-height: 47px;
+  color: #292f77 !important;
 `
 
 const HeroSubtitle = styled.h2`
