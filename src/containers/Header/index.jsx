@@ -4,7 +4,10 @@ import logo from '../../assets/img/logo.svg'
 
 const HeaderContainer = styled.header``
 
-const Button = styled.button``
+const Button = styled.button`
+  background: #82A1FF;
+  border-color: #82A1FF;
+`
 
 export default function Header() {
   return (
@@ -29,7 +32,7 @@ export default function Header() {
                 <a className="nav-link" href="#">Contato</a>
               </li>
               <li className="nav-item">
-                <Button className="btn btn-primary">Começar</Button>
+                <Button className="btn btn-primary rounded-pill">Começar</Button>
               </li>
             </ul>
           </div>

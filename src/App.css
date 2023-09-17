@@ -1,3 +1,14 @@
+:root {
+  --bs-primary: #82A1FF;
+  --bs-secondary: #292f77;
+}
+
+
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+section {
+  margin-bottom: 4rem;
+}
+

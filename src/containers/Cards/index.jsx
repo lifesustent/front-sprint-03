@@ -8,6 +8,44 @@ import Title from '../../components/Title';
 
 const CardsContainer = styled.section``
 
+const Card = styled.div`
+  height: 400px;
+  padding: 60px 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px #82A1FF, 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex: 1 1;
+`
+
+const CardImage = styled.img`
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+const CardTitle = styled.h5`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #141829;
+`
+
+const CardText = styled.p`
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+`
+
 export default function Cards() {
   return (
     <CardsContainer className="container">
@@ -21,47 +59,47 @@ export default function Cards() {
 
       <div className="row">
         <div className="col">
-          <div class="card">
-            <img src={realTime} class="card-img-top" alt="Monitoramento em tempo real" />
+          <Card class="card">
+            <CardImage src={realTime} class="card-img-top" alt="Monitoramento em tempo real" />
             <div class="card-body">
-              <h5 class="card-title">Monitoramento em tempo real</h5>
-              <p class="card-text">Tenha acesso a dados atualizados e precisos sobre a qualidade do ar, da água e a sonoridade em sua cidade.</p>
+              <CardTitle class="card-title">Monitoramento em tempo real</CardTitle>
+              <CardText class="card-text">Tenha acesso a dados atualizados e precisos sobre a qualidade do ar, da água e a sonoridade em sua cidade.</CardText>
             </div>
-          </div>
+          </Card>
         </div>
 
         <div className="col">
-          <div class="card">
-            <img src={analysis} class="card-img-top" alt="Análises avançadas e insights" />
+          <Card class="card">
+            <CardImage src={analysis} class="card-img-top" alt="Análises avançadas e insights" />
             <div class="card-body">
-              <h5 class="card-title">Análises avançadas e insights</h5>
-              <p class="card-text">Utiliza inteligência artificial para analisar grandes volumes de dados e fornecer insights valiosos.
-            Identifique padrões, tendências e tome medidas proativas para melhorar a qualidade ambiental.</p>
+              <CardTitle class="card-title">Análises avançadas e insights</CardTitle>
+              <CardText class="card-text">Utiliza inteligência artificial para analisar grandes volumes de dados e fornecer insights valiosos.
+            Identifique padrões, tendências e tome medidas proativas para melhorar a qualidade ambiental.</CardText>
             </div>
-          </div>
+          </Card>
         </div>
 
         <div className="col">
-          <div class="card">
-            <img src={predict} class="card-img-top" alt="Previsão e aconselhamento inteligente" />
+          <Card class="card">
+            <CardImage src={predict} class="card-img-top" alt="Previsão e aconselhamento inteligente" />
             <div class="card-body">
-              <h5 class="card-title">Previsão e aconselhamento inteligente</h5>
-              <p class="card-text">Nossa plataforma é capaz de prever tendências futuras com base em dados históricos e fornecer
+              <CardTitle class="card-title">Previsão e aconselhamento inteligente</CardTitle>
+              <CardText class="card-text">Nossa plataforma é capaz de prever tendências futuras com base em dados históricos e fornecer
             aconselhamento personalizado. Obtenha sugestões práticas para promover ações preventivas e melhorar a
-            sustentabilidade.</p>
+            sustentabilidade.</CardText>
             </div>
-          </div>
+          </Card>
         </div>
 
         <div className="col">
-          <div class="card">
-            <img src={colab} class="card-img-top" alt="Colaboração e integração" />
+          <Card class="card">
+            <CardImage src={colab} class="card-img-top" alt="Colaboração e integração" />
             <div class="card-body">
-              <h5 class="card-title">Colaboração e integração</h5>
-              <p class="card-text">Possui solução flexível e colaborativa. Integre nossos dados com outras plataformas e aproveite nossa API
-            aberta para promover a troca de informações e a cooperação entre diferentes partes interessadas.</p>
+              <CardTitle class="card-title">Colaboração e integração</CardTitle>
+              <CardText class="card-text">Possui solução flexível e colaborativa. Integre nossos dados com outras plataformas e aproveite nossa API
+            aberta para promover a troca de informações e a cooperação entre diferentes partes interessadas.</CardText>
             </div>
-          </div>
+          </Card>
         </div>
       </div>
     </CardsContainer>

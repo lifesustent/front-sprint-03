@@ -59,8 +59,14 @@ const ListItem = styled.li`
   }
 `
 
-const Footnote = styled.p`
+const Footnote = styled.div`
+  margin: 42px 0;
+`
+
+const FootnoteText = styled.p`
+  max-width: 500px;
   font-weight: bold;
+  text-align: center;
 `
 
 export default function Usecase() {
@@ -139,9 +145,11 @@ export default function Usecase() {
         </Step>
       </Steps>
 
-      <Footnote>Com o uso do software LifeSustent para monitoramento da qualidade do ar, as autoridades municipais de Urbana
+      <Footnote className='d-flex justify-content-center'>
+        <FootnoteText>Com o uso do software LifeSustent para monitoramento da qualidade do ar, as autoridades municipais de Urbana
           podem ter uma visão abrangente e atualizada da situação, permitindo uma abordagem proativa e eficiente na
-          melhoria da qualidade do ar na área urbana específica.</Footnote>
+          melhoria da qualidade do ar na área urbana específica.</FootnoteText>
+      </Footnote>
     </UsecaseContainer>
   )
 }

@@ -9,18 +9,44 @@ const FooterContainer = styled.footer`
   align-items: center;
 `
 
+const Container = styled.div``
+
+const Logo = styled.a`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+`
+
+const Text = styled.p`
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+`
+
 export default function Footer() {
   return (
     <FooterContainer>
-      <div className="container">
-        <a href="/" class="logo">
-          <img src={logoInverse} alt="LifeSustent" />
+      <Container className="container">
+        <div className="d-flex align-items-center justify-content-between">
+          <Logo href="/">
+            <img src={logoInverse} alt="LifeSustent" />
 
-          <p>Todos os direitos reservados.</p>
-        </a>
+            <p className="m-0">Todos os direitos reservados.</p>
+          </Logo>
 
-        <p>Feito com &lt;3 na Fiap</p>
-      </div>
+          <Text className="m-0">Feito com &lt;3 na Fiap</Text>
+        </div>
+      </Container>
     </FooterContainer>
   )
 }

@@ -12,7 +12,7 @@ import Footer from './containers/Footer';
 
 const Main = styled.main`
   min-height: 100vh;
-  background-color: #f5f5f5;
+  background-color: #f8fcff;
 `
 
 function App() {
