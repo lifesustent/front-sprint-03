@@ -36,6 +36,13 @@ export default function Auth() {
     navigate('/login')
   }
 
+   // verifica se usuário está logado
+   const logado = localStorage.getItem('logado')
+
+   if (logado) {
+     navigate('/dashboard')
+   }
+
   return (
     <AuthContainer className='d-flex align-items-center py-4'>
       <Inner className='container'>
