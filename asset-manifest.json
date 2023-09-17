@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/front-sprint-03/static/css/main.21bd4c54.css",
-    "main.js": "/front-sprint-03/static/js/main.e615138a.js",
+    "main.js": "/front-sprint-03/static/js/main.6d57f760.js",
     "static/js/787.28cb0dcd.chunk.js": "/front-sprint-03/static/js/787.28cb0dcd.chunk.js",
     "static/media/hero-software.svg": "/front-sprint-03/static/media/hero-software.3c53e5f17ff0c953156c35902f0917fc.svg",
     "static/media/fill-software.png": "/front-sprint-03/static/media/fill-software.680e4f4df12594fc9f4d.png",
@@ -15,11 +15,11 @@
     "index.html": "/front-sprint-03/index.html",
     "static/media/logo-fiap.svg": "/front-sprint-03/static/media/logo-fiap.1e1a6bf0e36d11f60269d664325e353c.svg",
     "main.21bd4c54.css.map": "/front-sprint-03/static/css/main.21bd4c54.css.map",
-    "main.e615138a.js.map": "/front-sprint-03/static/js/main.e615138a.js.map",
+    "main.6d57f760.js.map": "/front-sprint-03/static/js/main.6d57f760.js.map",
     "787.28cb0dcd.chunk.js.map": "/front-sprint-03/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21bd4c54.css",
-    "static/js/main.e615138a.js"
+    "static/js/main.6d57f760.js"
   ]
 }
