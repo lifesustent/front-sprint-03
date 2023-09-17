@@ -30,7 +30,9 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: <Dashboard />,
   }
-]);
+], {
+  basename: "/",
+});
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
