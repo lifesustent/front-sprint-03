@@ -22,16 +22,32 @@ const FormContainer = styled.div``
 
 const FormControl = styled.div`
   max-width: 300px;
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
 `
 
 const Input = styled.input`
   max-width: 300px;
   min-width: 300px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `
 
 const Button = styled.button`
   max-width: 300px;
   min-width: 300px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 100%;
+  }
 `
 
 export default function Contact() {

@@ -14,6 +14,11 @@ const Steps = styled.div`
   gap: 20px;
   margin: 60px 0;
 
+  @media (max-width: 768px) {
+    justify-content: center;
+    align-items: center;
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -24,6 +29,10 @@ const Steps = styled.div`
     background: #82A1FF;
     border-radius: 10px;
     transform: translateX(-50%);
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 `
 
@@ -36,6 +45,10 @@ const Step = styled.div`
 
   &:nth-child(even) {
     align-self: flex-end;
+
+    @media (max-width: 768px) {
+      align-self: auto;
+    }
   }
 `
 
