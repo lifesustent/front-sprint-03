@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import logo from '../../assets/img/logo.svg'
 import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
 const AuthContainer = styled.section``
 
@@ -13,9 +14,10 @@ const Form = styled.form`
 `
 
 export default function Auth() {
+  const navigate = useNavigate()
+
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [remember, setRemember] = useState(false)
 
   const updateEmail = (e) => {
     setEmail(e.target.value)
@@ -25,14 +27,35 @@ export default function Auth() {
     setPassword(e.target.value)
   }
 
-  const updateRemember = (e) => {
-    setRemember(e.target.checked)
-  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    // localStorage.setItem('auth', JSON.stringify({ email, password, remember }))
+    const auth = localStorage.getItem('auth')
+    
+    if (!auth) {
+      alert('Usuário não encontrado')
+      return
+    }
+
+    const authObject = JSON.parse(auth)
+
+    if (authObject.email !== email || authObject.password !== password) {
+      alert('Usuário não encontrado')
+      return
+    } else {
+      alert('Usuário logado com sucesso')
+
+      localStorage.setItem('logado',  true)
+      navigate('/dashboard')
+    }
+  }
+
+  // verifica se usuário está logado
+  const logado = localStorage.getItem('logado')
+
+  if (logado) {
+    navigate('/dashboard')
   }
 
   return (
@@ -53,11 +76,8 @@ export default function Auth() {
               <label htmlFor="floatingPassword">Senha</label>
             </div>
 
-            <div className="form-check text-start my-3">
-              <input className="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault" onChange={updateRemember} />
-              <label className="form-check-label" htmlFor="flexCheckDefault">
-                Lembrar meu usuário
-              </label>
+            <div className="text-start my-3">
+              <Link to={'/register'} className="link-primary">Não tem uma conta? Cadastre-se</Link>
             </div>
             <button className="btn btn-primary w-100 py-2" type="submit">Login</button>
           </Form>

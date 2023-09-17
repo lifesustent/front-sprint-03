@@ -10,6 +10,7 @@ import reportWebVitals from './reportWebVitals';
 
 import Login from './containers/Login';
 import Register from './containers/Register';
+import Dashboard from './containers/Dashboard';
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   }
 ]);
 

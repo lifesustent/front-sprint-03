@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import logo from '../../assets/img/logo.svg'
 import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 
 const AuthContainer = styled.section``
 
@@ -13,6 +14,7 @@ const Form = styled.form`
 `
 
 export default function Auth() {
+  const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -27,7 +29,11 @@ export default function Auth() {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    // localStorage.setItem('auth', JSON.stringify({ email, password, remember }))
+    localStorage.setItem('auth', JSON.stringify({ email, password }))
+
+    alert('Usuário cadastrado com sucesso')
+
+    navigate('/login')
   }
 
   return (
@@ -48,6 +54,11 @@ export default function Auth() {
               <label htmlFor="floatingPassword">Senha</label>
             </div>
 
+            <div className="text-start my-3">
+              <Link to={'/login'} className="link-primary">
+                Já possui uma conta? Faça o login
+              </Link>
+            </div>
             <button className="btn btn-primary w-100 py-2" type="submit">Cadastrar</button>
           </Form>
         </div>
