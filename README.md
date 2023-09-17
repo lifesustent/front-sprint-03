@@ -1,5 +1,7 @@
 # SPRINT 3 - ESR1
 
+Sprint utilizando o projeto base do LifeSustent para execução.
+
 ## Alunos
 
 - Deivison Pertel – **RM 550803**
