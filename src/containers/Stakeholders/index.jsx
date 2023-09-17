@@ -15,7 +15,7 @@ export default function Stakeholders() {
       <Inner className='d-flex flex-column align-items-center justify-content-center'>
         <h6>Acreditado por</h6>
 
-        <div class="d-flex">
+        <div className="d-flex">
           <img src={fiapLogo} className='mx-2' alt="FIAP - Faculdade de Informática e Administração Paulista" />
           <img src={ibmLogo} className='mx-2' alt="IBM" />
         </div>

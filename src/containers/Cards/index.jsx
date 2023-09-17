@@ -59,32 +59,32 @@ export default function Cards() {
 
       <div className="row">
         <div className="col">
-          <Card class="card">
-            <CardImage src={realTime} class="card-img-top" alt="Monitoramento em tempo real" />
-            <div class="card-body">
-              <CardTitle class="card-title">Monitoramento em tempo real</CardTitle>
-              <CardText class="card-text">Tenha acesso a dados atualizados e precisos sobre a qualidade do ar, da água e a sonoridade em sua cidade.</CardText>
+          <Card className="card">
+            <CardImage src={realTime} className="card-img-top" alt="Monitoramento em tempo real" />
+            <div className="card-body">
+              <CardTitle className="card-title">Monitoramento em tempo real</CardTitle>
+              <CardText className="card-text">Tenha acesso a dados atualizados e precisos sobre a qualidade do ar, da água e a sonoridade em sua cidade.</CardText>
             </div>
           </Card>
         </div>
 
         <div className="col">
-          <Card class="card">
-            <CardImage src={analysis} class="card-img-top" alt="Análises avançadas e insights" />
-            <div class="card-body">
-              <CardTitle class="card-title">Análises avançadas e insights</CardTitle>
-              <CardText class="card-text">Utiliza inteligência artificial para analisar grandes volumes de dados e fornecer insights valiosos.
+          <Card className="card">
+            <CardImage src={analysis} className="card-img-top" alt="Análises avançadas e insights" />
+            <div className="card-body">
+              <CardTitle className="card-title">Análises avançadas e insights</CardTitle>
+              <CardText className="card-text">Utiliza inteligência artificial para analisar grandes volumes de dados e fornecer insights valiosos.
             Identifique padrões, tendências e tome medidas proativas para melhorar a qualidade ambiental.</CardText>
             </div>
           </Card>
         </div>
 
         <div className="col">
-          <Card class="card">
-            <CardImage src={predict} class="card-img-top" alt="Previsão e aconselhamento inteligente" />
-            <div class="card-body">
-              <CardTitle class="card-title">Previsão e aconselhamento inteligente</CardTitle>
-              <CardText class="card-text">Nossa plataforma é capaz de prever tendências futuras com base em dados históricos e fornecer
+          <Card className="card">
+            <CardImage src={predict} className="card-img-top" alt="Previsão e aconselhamento inteligente" />
+            <div className="card-body">
+              <CardTitle className="card-title">Previsão e aconselhamento inteligente</CardTitle>
+              <CardText className="card-text">Nossa plataforma é capaz de prever tendências futuras com base em dados históricos e fornecer
             aconselhamento personalizado. Obtenha sugestões práticas para promover ações preventivas e melhorar a
             sustentabilidade.</CardText>
             </div>
@@ -92,11 +92,11 @@ export default function Cards() {
         </div>
 
         <div className="col">
-          <Card class="card">
-            <CardImage src={colab} class="card-img-top" alt="Colaboração e integração" />
-            <div class="card-body">
-              <CardTitle class="card-title">Colaboração e integração</CardTitle>
-              <CardText class="card-text">Possui solução flexível e colaborativa. Integre nossos dados com outras plataformas e aproveite nossa API
+          <Card className="card">
+            <CardImage src={colab} className="card-img-top" alt="Colaboração e integração" />
+            <div className="card-body">
+              <CardTitle className="card-title">Colaboração e integração</CardTitle>
+              <CardText className="card-text">Possui solução flexível e colaborativa. Integre nossos dados com outras plataformas e aproveite nossa API
             aberta para promover a troca de informações e a cooperação entre diferentes partes interessadas.</CardText>
             </div>
           </Card>

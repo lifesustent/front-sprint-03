@@ -56,7 +56,7 @@ export default function Contact() {
               </FormControl>
 
 
-              <Button type="submit" className="btn btn-primary rounded-pill">Agendar demonstração <i class="bi bi-calendar ml-4"></i></Button>
+              <Button type="submit" className="btn btn-primary rounded-pill">Agendar demonstração <i className="bi bi-calendar ml-4"></i></Button>
             </FormContainer>
           </form>
         </div>
