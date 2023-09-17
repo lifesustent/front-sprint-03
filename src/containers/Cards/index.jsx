@@ -4,19 +4,20 @@ import realTime from '../../assets/img/hiw-realtime.svg';
 import analysis from '../../assets/img/hiw-analysis.svg';
 import predict from '../../assets/img/hiw-predict.svg';
 import colab from '../../assets/img/hiw-colab.svg';
+import Title from '../../components/Title';
 
 const CardsContainer = styled.section``
 
 export default function Cards() {
   return (
     <CardsContainer className="container">
-      <div className="d-flex flex-column">
-        <h2>Como funciona?</h2>
-        <p>Combinando hardware inovador e software avançado, a LifeSustent oferece uma abordagem holística para o
+      <Title
+        title="Como funciona?"
+        subtitle="Combinando hardware inovador e software avançado, a LifeSustent oferece uma abordagem holística para o
           monitoramento ambiental. Nosso sistema integrado é projetado para fornecer informações precisas e acionáveis que
           ajudam as autoridades municipais, organizações e cidadãos a tomar decisões informadas e promover uma mudança
-          positiva.</p>
-      </div>
+          positiva."
+      />
 
       <div className="row">
         <div className="col">

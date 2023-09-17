@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 import './App.css';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Stakeholders from './components/Stakeholders';
-import Cards from './components/Cards';
-import Fill from './components/Fill';
-import Usecase from './components/Usecase';
-import Contact from './components/Contact';
+import Header from './containers/Header';
+import Hero from './containers/Hero';
+import Stakeholders from './containers/Stakeholders';
+import Cards from './containers/Cards';
+import Fill from './containers/Fill';
+import Usecase from './containers/Usecase';
+import Contact from './containers/Contact';
+import Footer from './containers/Footer';
 
 const Main = styled.main`
   min-height: 100vh;
@@ -18,12 +19,16 @@ function App() {
   return (
     <Main>
       <Header />
+
+      {/* PAGES */}
       <Hero />
       <Stakeholders />
       <Cards />
       <Fill />
       <Usecase />
       <Contact />
+
+      <Footer />
     </Main>
   );
 }
