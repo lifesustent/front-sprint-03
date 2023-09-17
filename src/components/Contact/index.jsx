@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 
 const ContactContainer = styled.section`
@@ -34,6 +35,23 @@ const Button = styled.button`
 `
 
 export default function Contact() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+
+  const updateName = (e) => {
+    setName(e.target.value)
+  }
+
+  const updateEmail = (e) => {
+    setEmail(e.target.value)
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    alert(`Formulário enviado com sucesso ${name} ${email}}`)
+  }
+  
   return (
     <ContactContainer>
       <div className="container">
@@ -45,14 +63,14 @@ export default function Contact() {
               para todos.</Subtitle>
           </div>
 
-          <form action="" className="col">
+          <form onSubmit={handleSubmit} className="col">
             <FormContainer className="d-flex flex-column justify-content-end align-items-end">
               <FormControl className="mb-3">
-                <Input type="name" className="form-control" id="name" placeholder='name' />
+                <Input type="name" className="form-control" id="name" placeholder='name' onChange={updateName} />
               </FormControl>
 
               <FormControl className="mb-3">
-                <Input type="email" className="form-control" id="email" placeholder='e-mail' />
+                <Input type="email" className="form-control" id="email" placeholder='e-mail' onChange={updateEmail} />
               </FormControl>
 
 
