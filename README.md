@@ -1,4 +1,4 @@
-# SPRINT 3 - ESR1
+# SPRINT 4 - ESR1
 
 Sprint utilizando o projeto base do LifeSustent para execução.
 
