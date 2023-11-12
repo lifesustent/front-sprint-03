@@ -1,7 +1,11 @@
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 import Title from '../Title';
-import { cards } from './constants';
+import realTime from '../../assets/img/hiw-realtime.svg';
+import analysis from '../../assets/img/hiw-analysis.svg';
+import predict from '../../assets/img/hiw-predict.svg';
+import colab from '../../assets/img/hiw-colab.svg';
 
 const CardsContainer = styled.section``
 
@@ -44,6 +48,14 @@ const CardText = styled.p`
 `
 
 export default function Cards() {
+  const [services, setServices] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:3001/services')
+      .then(res => res.json())
+      .then(data => setServices(data))
+  }, [])
+
   return (
     <CardsContainer className="container">
       <Title
@@ -56,17 +68,21 @@ export default function Cards() {
 
       <div className="row row-cols-sm-1 row-cols-md-3 row-cols-lg-4">
         {
-          cards.map((card, i) => (
-            <div key={i} className="col">
-              <Card className="card">
-                <CardImage src={card.img.src} className="card-img-top" alt={card.title} />
-                <div className="card-body">
-                  <CardTitle className="card-title">{card.title}</CardTitle>
-                  <CardText className="card-text">{card.text}</CardText>
-                </div>
-              </Card>
-            </div>
-          ))
+          services.map((card, i) => {
+            const img = i === 0 ? realTime : i === 1 ? analysis : i === 2 ? predict : colab
+
+            return (
+              <div key={card.title} className="col">
+                <Card className="card">
+                  <CardImage src={img} className="card-img-top" alt={card.title} />
+                  <div className="card-body">
+                    <CardTitle className="card-title">{card.title}</CardTitle>
+                    <CardText className="card-text">{card.text}</CardText>
+                  </div>
+                </Card>
+              </div>
+            )
+          })
         }
       </div>
     </CardsContainer>
